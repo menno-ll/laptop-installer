@@ -25,7 +25,7 @@ source "$SCRIPT_DIRECTORY/installers/install-zsh.sh" "zsh"
 source "$SCRIPT_DIRECTORY/installers/install-oh-my-zsh.sh" "oh-my-zsh"
 source "$SCRIPT_DIRECTORY/installers/install-nvm.sh" "nvm"
 
-# Install CLI tools
+# Install brew CLI tools
 source "$SCRIPT_DIRECTORY/installers/install-brew-formula.sh" "wget"
 source "$SCRIPT_DIRECTORY/installers/install-brew-formula.sh" "php"
 source "$SCRIPT_DIRECTORY/installers/install-brew-formula.sh" "perl"
@@ -37,7 +37,7 @@ source "$SCRIPT_DIRECTORY/installers/install-brew-formula.sh" "yq"
 source "$SCRIPT_DIRECTORY/installers/install-brew-formula.sh" "wp-cli"
 source "$SCRIPT_DIRECTORY/installers/install-brew-formula.sh" "thefuck"
 
-# Install applications
+# Install brew cask applications
 source "$SCRIPT_DIRECTORY/installers/install-brew-cask.sh" "1password"
 source "$SCRIPT_DIRECTORY/installers/install-brew-cask.sh" "adobe-acrobat-reader"
 source "$SCRIPT_DIRECTORY/installers/install-brew-cask.sh" "android-studio"
@@ -67,7 +67,7 @@ source "$SCRIPT_DIRECTORY/installers/install-brew-cask.sh" "vlc"
 source "$SCRIPT_DIRECTORY/installers/install-brew-cask.sh" "yubico-authenticator"
 source "$SCRIPT_DIRECTORY/installers/install-brew-cask.sh" "zoom"
 
-# Install App Sore Applications
+# Install App Store applications
 source "$SCRIPT_DIRECTORY/installers/install-app-store-application.sh" "harvest" "https://apps.apple.com/us/app/harvest/id506189836"
 source "$SCRIPT_DIRECTORY/installers/install-app-store-application.sh" "keynote" "https://apps.apple.com/us/app/keynote/id409183694"
 source "$SCRIPT_DIRECTORY/installers/install-app-store-application.sh" "lightshot" "https://apps.apple.com/us/app/lightshot-screenshot/id526298438"
