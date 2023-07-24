@@ -18,7 +18,7 @@ if [[ ! $TERMINAL_HAS_APP_MANAGEMENT_PERMISSIONS =~ ^[Yy]$ ]]; then
 fi
 
 # Setup homebrew
-source "install-brew.sh"
+source "install-brew.sh" "brew"
 
 # Setup terminal
 source "install-xcode-select.sh" "xcode-select"
