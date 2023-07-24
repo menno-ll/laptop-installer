@@ -21,6 +21,18 @@ source "install-zsh.sh"
 source "install-oh-my-zsh.sh"
 source "install-nvm.sh"
 
+# Install CLI tools
+source "install-brew-formula.sh" "wget"
+source "install-brew-formula.sh" "php"
+source "install-brew-formula.sh" "perl"
+source "install-brew-formula.sh" "composer"
+source "install-brew-formula.sh" "mysql@5.7"
+source "install-brew-formula.sh" "qcachegrind"
+source "install-brew-formula.sh" "jq"
+source "install-brew-formula.sh" "yq"
+source "install-brew-formula.sh" "wp-cli"
+source "install-brew-formula.sh" "thefuck"
+
 # Install applications
 source "install-brew-cask.sh" "1password"
 source "install-brew-cask.sh" "adobe-acrobat-reader"
@@ -52,19 +64,19 @@ source "install-brew-cask.sh" "yubico-authenticator"
 source "install-brew-cask.sh" "zoom"
 
 # Install App Sore Applications
-source "install-app-store-application.sh" "Harvest" "https://apps.apple.com/us/app/harvest/id506189836"
-source "install-app-store-application.sh" "Keynote" "https://apps.apple.com/us/app/keynote/id409183694"
-source "install-app-store-application.sh" "Lightshot" "https://apps.apple.com/us/app/lightshot-screenshot/id526298438"
-source "install-app-store-application.sh" "Numbers" "https://apps.apple.com/us/app/numbers/id409203825"
-source "install-app-store-application.sh" "Pages" "https://apps.apple.com/us/app/pages/id409201541"
-source "install-app-store-application.sh" "XCode" "https://apps.apple.com/us/app/xcode/id497799835"
+source "install-app-store-application.sh" "harvest" "https://apps.apple.com/us/app/harvest/id506189836"
+source "install-app-store-application.sh" "keynote" "https://apps.apple.com/us/app/keynote/id409183694"
+source "install-app-store-application.sh" "lightshot" "https://apps.apple.com/us/app/lightshot-screenshot/id526298438"
+source "install-app-store-application.sh" "numbers" "https://apps.apple.com/us/app/numbers/id409203825"
+source "install-app-store-application.sh" "pages" "https://apps.apple.com/us/app/pages/id409201541"
+source "install-app-store-application.sh" "xcode" "https://apps.apple.com/us/app/xcode/id497799835"
 
 # Install manual applications
-source "install-manual-application.sh" "Android File Transfer" "https://www.android.com/filetransfer/"
+source "install-manual-application.sh" "android-file-transfer" "https://www.android.com/filetransfer/"
 
 # Install browser shortcut applications
-source "install-browser-shortcut-application.sh" "Google Calendar" "https://calendar.google.com/"
-source "install-browser-shortcut-application.sh" "Google Keep" "https://keep.google.com/"
-source "install-browser-shortcut-application.sh" "Voys" "https://webphone.voys.nl/"
+source "install-browser-shortcut-application.sh" "google-calendar" "https://calendar.google.com/"
+source "install-browser-shortcut-application.sh" "google-keep" "https://keep.google.com/"
+source "install-browser-shortcut-application.sh" "voys" "https://webphone.voys.nl/"
 
 generateGoodbyeMessage
