@@ -81,4 +81,7 @@ source "install-browser-shortcut-application.sh" "google-calendar" "https://cale
 source "install-browser-shortcut-application.sh" "google-keep" "https://keep.google.com/"
 source "install-browser-shortcut-application.sh" "voys" "https://webphone.voys.nl/"
 
+# Install Laravel Valet
+source "install-laravel-valet.sh" "laravel-valet"
+
 generateGoodbyeMessage

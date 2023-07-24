@@ -1,6 +1,6 @@
 #!/bin/bash -x
 
-generateNotificationBanner "Checking your installation of NVM..."
+generateNotificationBanner "Checking your installation of $1..."
 
 if [ "$(type -t nvm)" != "function" ]; then
     # NVM is not always loaded. Attempt to load it if it's not defined
@@ -10,11 +10,11 @@ if [ "$(type -t nvm)" != "function" ]; then
 fi
 
 if [ "$(type -t nvm)" != "function" ]; then
-    read -p "NVM is not installed. Do you want to install it? (y/n): " -n 1 -r INSTALL_NVM
+    read -p "$1 is not installed. Do you want to install it? (y/n): " -n 1 -r INSTALL_NVM
     echo
 
     if [[ $INSTALL_NVM =~ ^[Yy]$ ]]; then
-        echo "Installing NVM..."
+        echo "Installing $1..."
         curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash
 
         export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
@@ -24,11 +24,11 @@ if [ "$(type -t nvm)" != "function" ]; then
         runPostInstall "$1"
     fi
 else
-    read -p "NVM is already installed. Do you want to update it? (y/n): " -n 1 -r UPDATE_NVM
+    read -p "$1 is already installed. Do you want to update it? (y/n): " -n 1 -r UPDATE_NVM
     echo
     
     if [[ $UPDATE_NVM =~ ^[Yy]$ ]]; then
-        echo "Updating NVM..."
+        echo "Updating $1..."
         curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash
 
         runPostUpdate "$1"
