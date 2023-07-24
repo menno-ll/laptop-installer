@@ -17,6 +17,7 @@ fi
 source "install-brew.sh"
 
 # Setup terminal
+source "install-xcode-select.sh"
 source "install-zsh.sh"
 source "install-oh-my-zsh.sh"
 source "install-nvm.sh"
