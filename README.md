@@ -1,1 +1,3 @@
-# laptop-installer
+# Laptop Installer
+
+This script should install a complete macbook with everything Menno needs.
