@@ -6,7 +6,7 @@ echo "Copying WordPress driver..."
 cp "$SCRIPT_DIRECTORY/data/laravel-valet/WordPressValetDriver.php" "$HOME/.config/valet/Drivers/WordPressValetDriver.php"
 
 echo "Parking..."
-read -p "Enter the Valet sites root directory path (from the root, including the root /)." -r VALET_SITE_PATH
+read -p "Enter the Valet sites root directory path (from the root, including the root /):" -r VALET_SITE_PATH
 echo
 if [ ! -d "$VALET_SITE_PATH" ]; then
     read -p "The path $VALET_SITE_PATH does not exist. Do you want to create it? (y/n): " -n 1 -r VALET_SITE_PATH_CREATE
