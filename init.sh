@@ -53,8 +53,11 @@ source "install-brew-cask.sh" "adobe-acrobat-reader"
 
 # Install App Sore Applications
 source "install-app-store-application.sh" "Harvest" "https://apps.apple.com/us/app/harvest/id506189836"
-source "install-app-store-application.sh" "Keynote" "https://apps.apple.com/us/app/keynote/id409183694"
 source "install-app-store-application.sh" "Lightshot" "https://apps.apple.com/us/app/lightshot-screenshot/id526298438"
+source "install-app-store-application.sh" "Keynote" "https://apps.apple.com/us/app/keynote/id409183694"
+source "install-app-store-application.sh" "Numbers" "https://apps.apple.com/us/app/numbers/id409203825"
+source "install-app-store-application.sh" "Pages" "https://apps.apple.com/us/app/pages/id409201541"
+source "install-app-store-application.sh" "XCode" "https://apps.apple.com/us/app/xcode/id497799835"
 
 # Install manual applications
 source "install-manual-application.sh" "Android File Transfer" "https://www.android.com/filetransfer/"
