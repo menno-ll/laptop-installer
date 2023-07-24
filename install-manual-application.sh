@@ -8,4 +8,7 @@ echo
 if [[ $INSTALL_MANUAL_APPLICATION =~ ^[Yy]$ ]]; then
     echo "Opening browser with url $2..."
     open "$2"
+
+    read -p "When you have successfully installed $1, press the return key: " -r INSTALL_MANUAL_APPLICATION_COMPLETE
+    echo
 fi

@@ -11,4 +11,7 @@ if [[ $INSTALL_BROWSER_SHORTCUT_APPLICATION =~ ^[Yy]$ ]]; then
 
     echo "Opening browser with url $2..."
     open "$2"
+
+    read -p "When you have successfully installed $1, press the return key: " -r INSTALL_BROWSER_SHORTCUT_APPLICATION_COMPLETE
+    echo
 fi
