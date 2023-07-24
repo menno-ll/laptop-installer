@@ -27,7 +27,7 @@ else
 
         runPostUpdate "$1"
 
-        echo $1 needs the terminal to reload for it to work. Please close and reopen the terminal, and then re-run this script.";
+        echo "$1 needs the terminal to reload for it to work. Please close and reopen the terminal, and then re-run this script."
         exit
     fi
 fi
