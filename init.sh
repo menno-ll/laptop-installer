@@ -13,7 +13,7 @@ read -p "Does terminal have app management permissions? You can check this by go
 echo
 
 if [[ ! $TERMINAL_HAS_APP_MANAGEMENT_PERMISSIONS =~ ^[Yy]$ ]]; then
-    echo "Go to System Settings > Privacy & Security > App Management and add or enable your terminal. Then restart the terminal."
+    echo "Go to System Settings > Privacy & Security > App Management and add or enable the Terminal app. Then restart the terminal."
     exit
 fi
 
