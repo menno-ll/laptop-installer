@@ -63,11 +63,4 @@ source "install-browser-shortcut-application.sh" "Voys" "https://webphone.voys.n
 source "install-browser-shortcut-application.sh" "Google Calendar" "https://calendar.google.com/"
 source "install-browser-shortcut-application.sh" "Google Keep" "https://keep.google.com/"
 
-# Install webapps
-# Voys
-# Calendar
-# Google Keep
-
-
-
 generateGoodbyeMessage
