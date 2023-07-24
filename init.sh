@@ -49,6 +49,7 @@ source "install-brew-cask.sh" "bitwarden"
 source "install-brew-cask.sh" "browserstacklocal"
 source "install-brew-cask.sh" "zoom"
 source "install-brew-cask.sh" "obs"
+source "install-brew-cask.sh" "adobe-acrobat-reader"
 
 # Install App Sore Applications
 source "install-app-store-application.sh" "Harvest" "https://apps.apple.com/us/app/harvest/id506189836"
