@@ -19,6 +19,7 @@ source "install-brew.sh"
 # Setup terminal
 source "install-zsh.sh"
 source "install-oh-my-zsh.sh"
+source "install-nvm.sh"
 
 # Install applications
 source "install-brew-cask.sh" "1password"
