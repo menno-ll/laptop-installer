@@ -1,5 +1,8 @@
 #!/bin/bash -x
 
+SCRIPT_DIRECTORY="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+echo $SCRIPT_DIRECTORY;
+
 # Load functions
 source "helper-message.sh"
 source "helper-install.sh"
