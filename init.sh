@@ -1,7 +1,8 @@
 #!/bin/bash -x
 
 # Load functions
-source "generate-message.sh"
+source "helper-message.sh"
+source "helper-install.sh"
 
 generateWelcomeMessage
 
@@ -17,10 +18,10 @@ fi
 source "install-brew.sh"
 
 # Setup terminal
-source "install-xcode-select.sh"
-source "install-zsh.sh"
-source "install-oh-my-zsh.sh"
-source "install-nvm.sh"
+source "install-xcode-select.sh" "xcode-select"
+source "install-zsh.sh" "zsh"
+source "install-oh-my-zsh.sh" "oh-my-zsh"
+source "install-nvm.sh" "nvm"
 
 # Install CLI tools
 source "install-brew-formula.sh" "wget"

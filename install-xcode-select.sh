@@ -10,6 +10,8 @@ if [ ! -x "$(command -v xcode-select)" ]; then
         echo "Installing Xcode Command Line Tools..."
         xcode-select --install
 
+        runPostInstall "$1"
+
         echo "Xcode command line tools needs the terminal to reload for it to work. Please close and reopen the terminal, and then re-run this script.";
         exit
     fi
@@ -22,6 +24,8 @@ else
         echo "To update XCode Command Line Tools, it will first be deleted and then reinstalled."
         sudo rm -rf /Library/Developer/CommandLineTools
         xcode-select --install
+
+        runPostUpdate "$1"
 
         echo "Xcode command line tools needs the terminal to reload for it to work. Please close and reopen the terminal, and then re-run this script.";
         exit

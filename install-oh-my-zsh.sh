@@ -10,6 +10,8 @@ if [ ! -d "$HOME/.oh-my-zsh/" ]; then
         echo "Installing Oh My ZSH..."
         sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
+        runPostInstall "$1"
+
         echo "Oh My ZSH needs the terminal to reload for it to work. Please close and reopen the terminal, and then re-run this script.";
         exit
     fi
@@ -20,5 +22,7 @@ else
     if [[ $UPDATE_OMZ =~ ^[Yy]$ ]]; then
         echo "Updating Oh My ZSH..."
         sh "$ZSH/tools/upgrade.sh"
+
+        runPostUpdate "$1"
     fi
 fi

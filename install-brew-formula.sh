@@ -9,6 +9,8 @@ if ! brew info $1 &>/dev/null; then
     if [[ $INSTALL_BREW_FORMULA =~ ^[Yy]$ ]]; then
         echo "Installing $1..."
         brew install $1
+
+        runPostInstall "$1"
     fi
 else
     read -p "$1 is already installed. Do you want to update it? (y/n): " -n 1 -r INSTALL_BREW_FORMULA
@@ -17,5 +19,7 @@ else
     if [[ $INSTALL_BREW_FORMULA =~ ^[Yy]$ ]]; then
         echo "Updating $1..."
         brew upgrade $1
+
+        runPostUpdate "$1"
     fi
 fi

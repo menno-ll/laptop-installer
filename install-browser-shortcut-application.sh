@@ -14,4 +14,7 @@ if [[ $INSTALL_BROWSER_SHORTCUT_APPLICATION =~ ^[Yy]$ ]]; then
 
     read -p "When you have successfully installed $1, press the return key: " -r INSTALL_BROWSER_SHORTCUT_APPLICATION_COMPLETE
     echo
+
+    runPostInstall "$1"
+    runPostUpdate "$1"
 fi

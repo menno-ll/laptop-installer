@@ -10,6 +10,8 @@ if [ ! -x "$(command -v zsh)" ]; then
         echo "Installing ZSH..."
         brew install zsh
 
+        runPostInstall "$1"
+
         echo "ZSH needs the terminal to reload for it to work. Please close and reopen the terminal, and then re-run this script.";
         exit
     fi
@@ -27,5 +29,7 @@ else
             # Installed via brew
             brew upgrade zsh
         fi
+
+        runPostUpdate "$1"
     fi
 fi

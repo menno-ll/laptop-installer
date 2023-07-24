@@ -11,4 +11,7 @@ if [[ $INSTALL_APP_STORE_APPLICATION =~ ^[Yy]$ ]]; then
 
     read -p "When you have successfully installed $1, press the return key: " -r INSTALL_APP_STORE_APPLICATION_COMPLETE
     echo
+
+    runPostInstall "$1"
+    runPostUpdate "$1"
 fi
