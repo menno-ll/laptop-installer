@@ -1,6 +1,6 @@
 #!/bin/bash -x
 
-generateNotificationBanner "Running post-install script of  $1..."
+generateNotificationBanner "Running post-install script of $1..."
 
 echo "Copying WordPress driver..."
 cp "$SCRIPT_DIRECTORY/data/laravel-valet/WordPressValetDriver.php" "$HOME/.config/valet/Drivers/WordPressValetDriver.php"
