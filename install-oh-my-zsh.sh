@@ -6,7 +6,7 @@ if [ ! -d "$HOME/.oh-my-zsh/" ]; then
     read -p "$1 is not installed. Do you want to install it? (y/n): " -n 1 -r INSTALL_OMZ
     echo
 
-    if [[ $INSTALL_ZSH =~ ^[Yy]$ ]]; then
+    if [[ $INSTALL_OMZ =~ ^[Yy]$ ]]; then
         echo "Installing $1..."
         sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
