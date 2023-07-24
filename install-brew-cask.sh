@@ -2,7 +2,7 @@
 
 generateNotificationBanner "Checking your installation of $1..."
 
-if ! brew info $1 &>/dev/null; then
+if ! brew list --cask $1 &>/dev/null; then
     read -p "$1 is not installed. Do you want to install it? (y/n): " -n 1 -r INSTALL_BREW_CASK
     echo
 
@@ -19,7 +19,7 @@ else
     if [[ $UPDATE_BREW_CASK =~ ^[Yy]$ ]]; then
         echo "Updating $1..."
         brew upgrade --cask $1
-        
+
         runPostUpdate "$1"
     fi
 fi
