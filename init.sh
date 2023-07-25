@@ -8,7 +8,7 @@ source "$SCRIPT_DIRECTORY/helpers/helper-install.sh"
 
 generateWelcomeMessage
 
-read -p "Does terminal have app management permissions? You can check this by going to System Settings > Privacy & Security > App Management and verifying terminal is enabled. (y/n): " -n 1 -r TERMINAL_HAS_APP_MANAGEMENT_PERMISSIONS
+read -p "Does terminal have app management permissions? You can check this by going to System Settings > Privacy & Security > App Management and verifying terminal is present and enabled. (y/n): " -n 1 -r TERMINAL_HAS_APP_MANAGEMENT_PERMISSIONS
 echo
 
 if [[ ! $TERMINAL_HAS_APP_MANAGEMENT_PERMISSIONS =~ ^[Yy]$ ]]; then
