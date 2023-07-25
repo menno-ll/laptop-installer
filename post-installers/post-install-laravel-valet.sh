@@ -21,7 +21,12 @@ if [ ! -d "$VALET_SITE_PATH" ]; then
     fi
 fi
 
- if [ ! -x "$(command -v valet)" ]; then
+if [ ! -x "$(command -v valet)" ]; then
+    echo 'Valet command is not available, adding Composer bin to PATH in an attempt to fix it.';
+    export PATH="$PATH:$HOME/.composer/vendor/bin"
+fi
+
+if [ ! -x "$(command -v valet)" ]; then
     echo "laravel Valet cannot park automatically. Please open a new terminal tab and run the following command to park Laravel Valet:";
     echo '```'
     echo "cd \"$VALET_SITE_PATH\""
