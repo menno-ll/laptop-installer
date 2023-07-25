@@ -86,4 +86,7 @@ source "$SCRIPT_DIRECTORY/installers/install-browser-shortcut-application.sh" "v
 # Install Laravel Valet
 source "$SCRIPT_DIRECTORY/installers/install-laravel-valet.sh" "laravel-valet"
 
+# Update settings
+source "$SCRIPT_DIRECTORY/settings/settings-osx.sh" "osx"
+
 generateGoodbyeMessage
