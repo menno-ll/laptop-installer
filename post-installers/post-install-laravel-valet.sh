@@ -2,6 +2,11 @@
 
 generateNotificationBanner "Running post-install script of $1..."
 
+if [ ! -x "$(command -v valet)" ]; then
+    echo 'Valet command is not available, adding Composer bin to PATH in an attempt to fix it.';
+    export PATH="$PATH:$HOME/.composer/vendor/bin"
+fi
+
 echo "Copying WordPress driver..."
 cp "$SCRIPT_DIRECTORY/data/laravel-valet/WordPressValetDriver.php" "$HOME/.config/valet/Drivers/WordPressValetDriver.php"
 
