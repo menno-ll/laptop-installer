@@ -16,13 +16,12 @@ if [ ! -d "$HOME/.config/valet" ]; then
         fi
 
         if [ ! -x "$(command -v valet)" ]; then
-            VALET_POST_INSTALL_SCRIPT="$SCRIPT_DIRECTORY/post-installers/post-install-$1.sh"
-            osascript -e "
-            tell application \"Terminal\"
-                set currentTab to do script \"valet install\"
-                do script \"sh $VALET_POST_INSTALL_SCRIPT $1\" in currentTab
-                do script \"echo 'Valet post install script has been completed. You may close this terminal tab.'\" in currentTab
-            end tell"
+            echo "laravel Valet cannot be installed automatically. Please open a new terminal tab and run the following commands to install Laravel Valet:";
+            echo '```'
+            echo "valet install"
+            echo '```'
+            read -p "When you have successfully installed $1, press the return key: " -r LARAVEL_INSTALL_COMMAND_COMPLETE
+            echo
         else
             valet install
             runPostInstall "$1"

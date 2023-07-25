@@ -20,6 +20,17 @@ if [ ! -d "$VALET_SITE_PATH" ]; then
         exit
     fi
 fi
-cd "$VALET_SITE_PATH"
-valet park
-cd "$SCRIPT_DIRECTORY"
+
+ if [ ! -x "$(command -v valet)" ]; then
+    echo "laravel Valet cannot park automatically. Please open a new terminal tab and run the following command to park Laravel Valet:";
+    echo '```'
+    echo "cd \"$VALET_SITE_PATH\""
+    echo "valet park"
+    echo '```'
+    read -p "When you have successfully parked $1, press the return key: " -r LARAVEL_PARK_COMMAND_COMPLETE
+    echo
+else
+    cd "$VALET_SITE_PATH"
+    valet park
+    cd "$SCRIPT_DIRECTORY"
+fi
