@@ -45,7 +45,7 @@ function generateGoodbyeMessage {
 	echo '##     ######                                                   ##'
 	echo '##  #########  Laptop installed.                                ##'
 	echo '#############                                                   ##'
-	echo '#########  ##  Please close and reopen all terminal windows     ##'
+	echo '#########  ##  Please restart your laptop to apply all changes  ##'
 	echo '######     ##                                                   ##'
 	echo '##################################################################'
 	echo '##################################################################'
