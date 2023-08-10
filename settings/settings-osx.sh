@@ -83,6 +83,11 @@ if [[ $SETTINGS_OSX =~ ^[Yy]$ ]]; then
     # When performing a search, search the current folder by default
     defaults write com.apple.finder FXDefaultSearchScope -string "SCcf"
 
+    # Remove Trash items after 30 days.
+    defaults write com.apple.finder FXRemoveOldTrashItems -bool true
+
+    killall Finder
+
     ###############################################################################
     # Dock, Dashboard, and hot corners                                            #
     ###############################################################################
@@ -93,4 +98,6 @@ if [[ $SETTINGS_OSX =~ ^[Yy]$ ]]; then
 
     # Don’t show recent applications in Dock
     defaults write com.apple.dock show-recents -bool false
+
+    killall Dock
 fi
