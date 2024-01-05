@@ -43,6 +43,7 @@ source "$SCRIPT_DIRECTORY/installers/install-brew-cask.sh" "adobe-acrobat-reader
 source "$SCRIPT_DIRECTORY/installers/install-brew-cask.sh" "android-studio"
 source "$SCRIPT_DIRECTORY/installers/install-brew-cask.sh" "bitwarden"
 source "$SCRIPT_DIRECTORY/installers/install-brew-cask.sh" "browserstacklocal"
+source "$SCRIPT_DIRECTORY/installers/install-brew-cask.sh" "chromedriver"
 source "$SCRIPT_DIRECTORY/installers/install-brew-cask.sh" "dash"
 source "$SCRIPT_DIRECTORY/installers/install-brew-cask.sh" "discord"
 source "$SCRIPT_DIRECTORY/installers/install-brew-cask.sh" "docker"
