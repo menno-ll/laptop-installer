@@ -77,11 +77,14 @@ source "$SCRIPT_DIRECTORY/installers/install-app-store-application.sh" "pages" "
 source "$SCRIPT_DIRECTORY/installers/install-app-store-application.sh" "xcode" "https://apps.apple.com/us/app/xcode/id497799835"
 
 # Install manual applications
-source "$SCRIPT_DIRECTORY/installers/install-manual-application.sh" "android-file-transfer" "https://www.android.com/filetransfer/"
+# source "$SCRIPT_DIRECTORY/installers/install-manual-application.sh" "app-name" "https://some-link.com"
 
 # Install browser shortcut applications
 source "$SCRIPT_DIRECTORY/installers/install-browser-shortcut-application.sh" "google-calendar" "https://calendar.google.com/"
 source "$SCRIPT_DIRECTORY/installers/install-browser-shortcut-application.sh" "google-keep" "https://keep.google.com/"
 source "$SCRIPT_DIRECTORY/installers/install-browser-shortcut-application.sh" "voys" "https://webphone.voys.nl/"
+
+# Install Laravel Valet
+# source "$SCRIPT_DIRECTORY/installers/install-laravel-valet.sh" "laravel-valet"
 
 generateGoodbyeMessage
