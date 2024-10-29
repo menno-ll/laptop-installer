@@ -30,7 +30,6 @@ source "$SCRIPT_DIRECTORY/installers/install-brew-formula.sh" "wget"
 source "$SCRIPT_DIRECTORY/installers/install-brew-formula.sh" "php"
 source "$SCRIPT_DIRECTORY/installers/install-brew-formula.sh" "perl"
 source "$SCRIPT_DIRECTORY/installers/install-brew-formula.sh" "composer"
-source "$SCRIPT_DIRECTORY/installers/install-brew-formula.sh" "mysql@5.7"
 source "$SCRIPT_DIRECTORY/installers/install-brew-formula.sh" "qcachegrind"
 source "$SCRIPT_DIRECTORY/installers/install-brew-formula.sh" "jq"
 source "$SCRIPT_DIRECTORY/installers/install-brew-formula.sh" "yq"
@@ -63,9 +62,7 @@ source "$SCRIPT_DIRECTORY/installers/install-brew-cask.sh" "soapui"
 source "$SCRIPT_DIRECTORY/installers/install-brew-cask.sh" "spotify"
 source "$SCRIPT_DIRECTORY/installers/install-brew-cask.sh" "teamviewer"
 source "$SCRIPT_DIRECTORY/installers/install-brew-cask.sh" "the-unarchiver"
-source "$SCRIPT_DIRECTORY/installers/install-brew-cask.sh" "tunnelblick"
-source "$SCRIPT_DIRECTORY/installers/install-brew-cask.sh" "vagrant"
-source "$SCRIPT_DIRECTORY/installers/install-brew-cask.sh" "virtualbox"
+source "$SCRIPT_DIRECTORY/installers/install-brew-cask.sh" "viscosity"
 source "$SCRIPT_DIRECTORY/installers/install-brew-cask.sh" "visual-studio-code"
 source "$SCRIPT_DIRECTORY/installers/install-brew-cask.sh" "vlc"
 source "$SCRIPT_DIRECTORY/installers/install-brew-cask.sh" "yubico-authenticator"
@@ -86,11 +83,5 @@ source "$SCRIPT_DIRECTORY/installers/install-manual-application.sh" "android-fil
 source "$SCRIPT_DIRECTORY/installers/install-browser-shortcut-application.sh" "google-calendar" "https://calendar.google.com/"
 source "$SCRIPT_DIRECTORY/installers/install-browser-shortcut-application.sh" "google-keep" "https://keep.google.com/"
 source "$SCRIPT_DIRECTORY/installers/install-browser-shortcut-application.sh" "voys" "https://webphone.voys.nl/"
-
-# Install Laravel Valet
-source "$SCRIPT_DIRECTORY/installers/install-laravel-valet.sh" "laravel-valet"
-
-# Update settings
-source "$SCRIPT_DIRECTORY/settings/settings-osx.sh" "osx"
 
 generateGoodbyeMessage
