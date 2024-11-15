@@ -47,6 +47,8 @@ class WordPressValetDriver extends BasicValetDriver {
      * @return string
      */
     public function frontControllerPath(string $sitePath, string $siteName, string $uri): string {
+        $this->forceTrailingSlash($uri);
+        
         $uri = $this->rewriteMultisite($sitePath, $uri);
         $sitePath = $this->realSitePath($sitePath);
 
