@@ -83,6 +83,7 @@ source "$SCRIPT_DIRECTORY/installers/install-app-store-application.sh" "xcode" "
 source "$SCRIPT_DIRECTORY/installers/install-browser-shortcut-application.sh" "google-calendar" "https://calendar.google.com/"
 source "$SCRIPT_DIRECTORY/installers/install-browser-shortcut-application.sh" "google-keep" "https://keep.google.com/"
 source "$SCRIPT_DIRECTORY/installers/install-browser-shortcut-application.sh" "voys" "https://webphone.voys.nl/"
+source "$SCRIPT_DIRECTORY/installers/install-browser-shortcut-application.sh" "teamleader-orbit" "https://levellevel.orbit.teamleader.eu/login.do"
 
 # Install Laravel Valet
 # source "$SCRIPT_DIRECTORY/installers/install-laravel-valet.sh" "laravel-valet"
